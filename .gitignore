@@ -173,3 +173,7 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/git,vue,vuejs,laravel,windows,phpstorm
+
+# Helper
+.phpstorm.meta.php
+_ide_helper.php
