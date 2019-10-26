@@ -61,7 +61,7 @@
   },
   "name": "app-delivery",
   "scripts": {
-    "postdeploy": "npm install"
+    "postdeploy": "php artisan migrate"
   },
   "stack": "heroku-18"
 }
