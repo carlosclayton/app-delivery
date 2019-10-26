@@ -3,6 +3,7 @@
     "heroku-postgresql"
   ],
   "buildpacks": [
+      "url": "heroku/nodejs"
   ],
   "env": {
     "ADMIN_DEFAULT_EMAIL": {
