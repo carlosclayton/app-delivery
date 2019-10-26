@@ -28,5 +28,8 @@
         "icheck": "^1.0.2",
         "ionicons": "^4.5.1",
         "vue2-admin-lte": "^0.4.3"
+    },
+    "engines": {
+        "node": "10.x"
     }
 }
