@@ -10,6 +10,7 @@
       "url": "heroku/php"
     }
   ],
+
   "env": {
     "ADMIN_DEFAULT_EMAIL": {
       "required": true
