@@ -5,6 +5,7 @@ use Illuminate\Support\Str;
 
 $databaseUrl = parse_url(env("DATABASE_URL"));
 
+
 return [
 
     /*
@@ -72,7 +73,7 @@ return [
             'port' => env('DB_PORT', $databaseUrl['port']),
             'database' => env('DB_DATABASE', substr($databaseUrl['path'], 1)),
             'username' => env('DB_USERNAME', $databaseUrl['user']),
-            'password' => env('DB_PASSWORD', $databaseUrl['password']),
+            'password' => env('DB_PASSWORD', $databaseUrl['pass']),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
