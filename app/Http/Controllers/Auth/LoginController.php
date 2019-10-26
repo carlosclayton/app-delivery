@@ -4,6 +4,7 @@ namespace Delivery\Http\Controllers\Auth;
 
 use Delivery\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -36,4 +37,15 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
+
+
+    public function logout(Request $request)
+    {
+        $this->guard()->logout();
+        $request->session()->invalidate();
+        flash('Logout realizado com sucesso')->success()->important();
+
+        return $this->loggedOut($request) ?: redirect('/login');
+    }
+
 }
