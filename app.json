@@ -54,7 +54,7 @@
       "quantity": 1
     }
   },
-  "name": "web-app-delivery",
+  "name": "app-delivery",
   "scripts": {
   },
   "stack": "heroku-18"
