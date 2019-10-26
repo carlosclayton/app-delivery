@@ -58,7 +58,7 @@
   },
   "name": "app-delivery",
   "scripts": {
-    "postdeploy": ""
+    "postdeploy": "npm install"
   },
   "stack": "heroku-18"
 }
