@@ -3,9 +3,6 @@
     "heroku-postgresql"
   ],
   "buildpacks": [
-    {
-      "postdeploy": "php artisan migrate"
-    }
   ],
   "env": {
     "ADMIN_DEFAULT_EMAIL": {
@@ -58,6 +55,7 @@
   },
   "name": "app-delivery",
   "scripts": {
+    "postdeploy": "php artisan migrate"
   },
   "stack": "heroku-18"
 }
